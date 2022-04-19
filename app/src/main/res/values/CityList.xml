@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="CityList">Citys</string>
+    <string name="selected_city">Selected City:</string>
+
+    <string-array name="City">
+        <item>Indore</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Bhopal</item>
+        <item>Channai</item>
+        <item>Jaipur</item>
+        <item>Ujjain</item>
+        <item>NewYork</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="State">State</string>
+    <string name="selected_state">Selected State</string>
+
+    <string-array name="State">
+        <item>MP</item>
+        <item>UP</item>
+        <item>MH</item>
+        <item>DL</item>
+        <item>GOA</item>
+        <item>UP</item>
+        <item>HP</item>
+        <item>PB</item>
+        <item>RJ</item>
+    </string-array>
+</resources>
