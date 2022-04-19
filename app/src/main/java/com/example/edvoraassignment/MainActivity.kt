@@ -1,9 +1,10 @@
 package com.example.edvoraassignment
 
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -12,6 +13,7 @@ import com.example.edvoraassignment.Extensions.load
 import com.example.edvoraassignment.adapter.ViewpagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewmodel: MainViewModel
@@ -59,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                 AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(parent: AdapterView<*>,
                                             view: View, position: Int, id: Long) {
+                    (view as TextView).setTextColor(Color.WHITE)
                     Toast.makeText(this@MainActivity,
                         getString(R.string.selected_city) + " " +
                                 "" + City[position], Toast.LENGTH_SHORT).show()
@@ -79,6 +82,7 @@ class MainActivity : AppCompatActivity() {
                 AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(parent: AdapterView<*>,
                                             view: View, position: Int, id: Long) {
+                    (view as TextView).setTextColor(Color.WHITE)
                     Toast.makeText(this@MainActivity,
                         getString(R.string.selected_state) + " " +
                                 "" + State[position], Toast.LENGTH_SHORT).show()
